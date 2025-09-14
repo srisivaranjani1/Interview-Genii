@@ -20,8 +20,7 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:5173", // local dev
-  "https://mockinterview-hyee-aek8hpp90-sri-karthikas-projects.vercel.app",
-  "https://mockinterview-hyee-bvvl778fd-sri-karthikas-projects.vercel.app",
+  "https://mockinterview-hyee-cjb24i0uh-sri-karthikas-projects.vercel.app",
   // add any new deploy URL here
 ];
 
