@@ -19,7 +19,7 @@ const app = express();
 // app.use(cors({ origin: "*" }));
 
 app.use(cors({
-  origin: "https://mockinterview-hyee.vercel.app", // replace with your real Vercel URL
+  origin: "https://mockinterview-hyee-aek8hpp90-sri-karthikas-projects.vercel.app", // replace with your real Vercel URL
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
