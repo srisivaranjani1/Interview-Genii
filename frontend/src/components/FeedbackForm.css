@@ -1,0 +1,78 @@
+
+.feedback-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 70px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.2);
+  }
+  
+  .feedback-container h2 {
+    text-align: center;
+    color: rgb(128, 0, 128);
+    margin-bottom: 20px;
+  }
+  
+  .feedback-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .feedback-form input,
+  .feedback-form select,
+  .feedback-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+    font-size: 15px;
+    transition: border-color 0.3s;
+    color:black;
+    background-color: white; 
+  }
+  
+  .feedback-form input:focus,
+  .feedback-form select:focus,
+  .feedback-form textarea:focus {
+    border-color: rgb(128, 0, 128);
+  }
+  
+  .feedback-form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background: rgb(128, 0, 128);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .feedback-form button:hover {
+    background: black;
+  }
+  
+
+  .star-rating {
+    display: flex;
+    gap: 8px;
+    font-size: 28px;
+    margin: 10px 0 20px;
+    cursor: pointer;
+    justify-content: center;
+  }
+  
+  .star {
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .star.filled {
+    color: rgb(128, 0, 128);
+  }

@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f0f0;
+  color: #ba36b2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px; /* Prevents full-bleed stretching on small screens */
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  background: #f5dcdc;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 0 30px rgba(186, 54, 178, 0.2);
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+.header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+}
+
+.select-prompt {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.animate-prompt {
+  animation: pulse 1.8s infinite;
+}
+
+.domain-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.domain-btn {
+  background: transparent;
+  border: 2px solid #ba36b2;
+  color: #ba36b2;
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.domain-btn:hover,
+.domain-btn.selected {
+  background-color: #ba36b2;
+  color: #f3dede;
+}
+
+.question-box {
+  background-color: #ff9dea;
+  padding: 25px;
+  border-radius: 15px;
+  border: 2px solid #ba36b2;
+  animation: fadeIn 0.8s ease-in;
+  margin-top: 30px;
+  color: #ba36b2;
+}
+
+.question {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.timer {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.mic-btn {
+  background-color: #ba36b2;
+  color: #151717;
+  font-size: 1.6rem;
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.mic-btn:hover {
+  transform: scale(1.1);
+}
+
+.progress-ring {
+  margin: 20px auto;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: conic-gradient(#f69341 calc(var(--percent) * 1%), #161010 calc(var(--percent) * 1%));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+}

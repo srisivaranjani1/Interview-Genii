@@ -1,0 +1,98 @@
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    left: 0;  /* Sidebar is always visible */
+    top: 0;
+    width: 250px;
+    height: 100%;
+    /* background: #333; */
+
+    background: #800080;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Updated Sidebar Logo */
+.sidebar-logo {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px 0; /* Added padding to give more space */
+}
+
+.logo {
+    width: 90%;  /* Increased width dynamically */
+    max-width: 250px; /* Set a larger max width */
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Sidebar Menu */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Sidebar Hover Effect */
+.sidebar ul li a:hover {
+    background: #555;
+}
+
+/* Sidebar Icons */
+.icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* REMOVE Hamburger Icon */
+.hamburger {
+    display: none;  /* Hide the blue menu button */
+}
+
+/* Sidebar Logo */
+.sidebar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .sidebar ul li .icon {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
