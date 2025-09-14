@@ -18,9 +18,22 @@ const app = express();
 
 // app.use(cors({ origin: "*" }));
 
+const allowedOrigins = [
+  "http://localhost:5173", // local dev
+  "https://mockinterview-hyee-aek8hpp90-sri-karthikas-projects.vercel.app",
+  "https://mockinterview-hyee-bvvl778fd-sri-karthikas-projects.vercel.app",
+  // add any new deploy URL here
+];
+
 app.use(cors({
-  origin: "https://mockinterview-hyee-aek8hpp90-sri-karthikas-projects.vercel.app", // replace with your real Vercel URL
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: function(origin, callback) {
+    if(!origin || allowedOrigins.includes(origin)){
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ["GET","POST","PUT","DELETE"],
   credentials: true
 }));
 
