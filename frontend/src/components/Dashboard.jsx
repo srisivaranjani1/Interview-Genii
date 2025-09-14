@@ -29,7 +29,7 @@ const Dashboard = () => {
   const fetchQuestions = async (domain) => {
     setLoadingQuestions(true);  // Start loading
     try {
-      const res = await axios.get(`http://localhost:5000/api/questions/${domain}`);
+      const res = await axios.get(`https://mockinterview-2-gxs9.onrender.com/api/questions/${domain}`);
       if (res.data.success && res.data.questions) {
         setQuestions(res.data.questions);
         setCurrentIndex(0);

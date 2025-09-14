@@ -20,16 +20,16 @@ const Meetings = () => {
   });
 
   const fetchMeetings = async () => {
-    const res = await axios.get('http://localhost:5000/api/meetings');
+    const res = await axios.get('https://mockinterview-2-gxs9.onrender.com/api/meetings');
     setMeetings(res.data);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (form.id) {
-      await axios.put(`http://localhost:5000/api/meetings/${form.id}`, form);
+      await axios.put(`https://mockinterview-2-gxs9.onrender.com/api/meetings/${form.id}`, form);
     } else {
-      await axios.post('http://localhost:5000/api/meetings', form);
+      await axios.post('https://mockinterview-2-gxs9.onrender.com/api/meetings', form);
     }
     setForm({
       title: '',
@@ -53,7 +53,7 @@ const Meetings = () => {
   };
 
   const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:5000/api/meetings/${id}`);
+    await axios.delete(`https://mockinterview-2-gxs9.onrender.com/api/meetings/${id}`);
     fetchMeetings();
   };
 

@@ -35,7 +35,7 @@ export default function Home() {
     formData.append('resume', file);
 
     try {
-      const res = await axios.post('http://localhost:5000/upload', formData);
+      const res = await axios.post('https://mockinterview-2-gxs9.onrender.com/upload', formData);
       setQuestions(res.data.questions.split('\n').filter(q => q.trim() !== ''));
       setResumeUploaded(true);
     } catch (error) {
@@ -228,7 +228,7 @@ export default function Home() {
     };
 
     try {
-      await axios.post('http://localhost:5000/api/save-result', payload);
+      await axios.post('https://mockinterview-2-gxs9.onrender.com/api/save-result', payload);
       alert(
         `✅ Saved! Grammar: ${grammarScore}%, Emotion: ${dominantEmotion}, Content: ${contentScore}%, Overall: ${overallScore}%`
       );

@@ -35,7 +35,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchLatestResult = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/get-latest-result");
+        const res = await axios.get("https://mockinterview-2-gxs9.onrender.com/api/get-latest-result");
         const data = res.data;
 
         setScoreData({
