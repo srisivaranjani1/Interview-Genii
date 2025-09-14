@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import LandingPage from "./components/LandingPage";
-import SignUp from "./components/SignUp";
+import SignUp from "./components/Signup";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import Profile from "./components/Profile";
