@@ -18,11 +18,18 @@ const app = express();
 
 // app.use(cors({ origin: "*" }));
 
-const allowedOrigins = [
-  "http://localhost:5173", // local dev
-  "https://mockinterview-hyee-cjb24i0uh-sri-karthikas-projects.vercel.app",
-  // add any new deploy URL here
-];
+app.use(cors({
+  origin: function(origin, callback){
+    // allow localhost for dev or any frontend
+    if(!origin || origin.includes("vercel.app") || origin.includes("localhost")) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
+}));
+
 
 app.use(cors({
   origin: function(origin, callback) {
