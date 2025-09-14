@@ -1,5 +1,5 @@
 import React from "react";
-import "./services.css";
+import "./Services.css";
 import { FaFileUpload, FaBrain, FaVideo, FaCalendarAlt, FaCheckCircle, FaChartLine } from "react-icons/fa";
 
 const Services = () => {
