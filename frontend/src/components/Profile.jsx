@@ -27,7 +27,7 @@ const Profile = () => {
   const user = {
     name: username,
     role: "Software Engineer",
-    interviewDate: "Sep 11, 2025",
+    interviewDate: "Sep 15, 2025",
     profilePic:
       "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?w=740",
   };
@@ -141,10 +141,10 @@ const Profile = () => {
               {loading ? "Loading..." : `${scoreData.score}%`}
             </p>
             <p>
-              <strong>Duration:</strong> 00:10:00
+              <strong>Duration:</strong> 00:07:00
             </p>
             <p>
-              <strong>Questions:</strong> 5
+              <strong>Questions:</strong> 3
             </p>
           </div>
 
