@@ -85,8 +85,8 @@ body {
 }
 
 .mic-btn {
-  background-color: #ba36b2;
-  color: #151717;
+  background-color: #800080;
+  color: #6a329f;
   font-size: 1.6rem;
   padding: 12px;
   border-radius: 50%;
@@ -96,6 +96,7 @@ body {
 }
 
 .mic-btn:hover {
+  background-color: #800080;
   transform: scale(1.1);
 }
 

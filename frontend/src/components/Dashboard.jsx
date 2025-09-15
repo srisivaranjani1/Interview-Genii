@@ -141,11 +141,11 @@ const Dashboard = () => {
             <MicIcon />
           </button>
 
-          <div style={{ marginTop: '15px', color: '#ccc' }}>
+          <div style={{ marginTop: '15px', color: '#800080' }}>
             🎙 {listening ? "Listening..." : transcript}
           </div>
 
-          <button onClick={checkGrammar} style={{ marginTop: '10px' }} disabled={checkingGrammar}>
+          <button onClick={checkGrammar} style={{ marginTop: '10px', backgroundColor:"#800080" }} disabled={checkingGrammar}>
             ✅ {checkingGrammar ? "Checking..." : "Check Grammar"}
           </button>
 
