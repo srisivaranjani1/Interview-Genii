@@ -19,27 +19,8 @@ const app = express();
 // app.use(cors({ origin: "*" }));
 
 app.use(cors({
-  origin: function(origin, callback){
-    // allow localhost for dev or any frontend
-    if(!origin || origin.includes("vercel.app") || origin.includes("localhost")) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  credentials: true
-}));
-
-
-app.use(cors({
-  origin: function(origin, callback) {
-    if(!origin || allowedOrigins.includes(origin)){
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  methods: ["GET","POST","PUT","DELETE"],
+  origin: "https://mockinterview-hyee-aek8hpp90-sri-karthikas-projects.vercel.app", // replace with your real Vercel URL
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
 
